@@ -4,4 +4,5 @@ Una pequeña antología digital con artículos y contenido relacionado con la co
 
 ## Integrantes.
 
-- González Flores Andrés
+- Andrés González Flores
+- Carlos Israel Almaguer Rioja
