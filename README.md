@@ -6,3 +6,5 @@ Una pequeña antología digital con artículos y contenido relacionado con la co
 
 - Andrés González Flores
 - Carlos Israel Almaguer Rioja
+- Erick Simeón Jaimes Ojeda
+- Santos Albañil Morteo
