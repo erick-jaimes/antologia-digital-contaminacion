@@ -1,0 +1,49 @@
+/*------------------------------------------------------------------------+
+|	NAVEGACION
++------------------------------------------------------------------------*/
+
+html,body{
+      height: 100%;
+}
+
+#nav {   /* El �mbito de navegaci�n */
+      float:left;
+      font-family:Verdana;
+      font-size:12px;
+      padding:10px;
+      margin-right: 10px;
+      background-color: rgba(0,0,255,0.4);
+      border-radius:5px;
+}
+
+ul#nav_menu {  /* El �mbito de las opciones */
+      margin: 0;
+      padding: 0px;
+}
+
+ul#nav_menu li {  /* La opci�n */
+      list-style-type: none;
+}
+
+ul#nav_menu a:link, a:visited {  /* Estatus normal: Opci�n enlazada y visitada */
+      display: block;
+      width: 100%;
+      padding: 4px;
+      color: #FFFFFF;
+      text-align: left;
+      text-decoration: none;
+}
+
+ul#nav_menu a:hover, a:active {  /* El cursor sobre la opci�n activa su fondo*/
+      background-color:rgba(0,0,255,0.7);
+}
+
+.nav_titulo {  /* T�tulo gen�rico de las opciones */
+font-family: Georgia;
+font-size: 14px;
+background: gray;
+color: white;
+padding: 4px 8px;
+border-radius: 4px;
+margin-bottom: 8px;
+}
