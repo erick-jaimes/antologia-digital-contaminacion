@@ -1,0 +1,25 @@
+.ctndor {
+    width: 70%;
+    overflow: auto;
+    margin: auto;
+    height: auto;
+  }
+
+  .parrafo {
+      font-family:Verdana; 
+      font-size:16px; 
+      font-style:bold; 
+      padding:5px; 
+      text-align:justify;
+  }
+
+  #titulo {
+      font-family: Georgia; 
+      font-size:25px; 
+      padding:2px; 
+      text-align:center;
+  }
+
+  .sangria {
+      text-indent: 40px;
+  }
