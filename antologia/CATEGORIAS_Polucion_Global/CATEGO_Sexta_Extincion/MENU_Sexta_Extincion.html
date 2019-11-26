@@ -5,13 +5,24 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <meta http-equiv="X-UA-Compatible" content="ie=edge">
    <title>MENU_Sexta_Extincion</title>
-   <link rel="stylesheet" href="ITEMS_Sexta_Extincion/w3.css">
-   <link rel="stylesheet" href="ITEMS_Sexta_Extincion/nav.css">
+   <link rel="stylesheet" href="../../css/bootstrap-grid.css">
+   <link rel="stylesheet" href="../../css/w3.css">
+   <link rel="stylesheet" href="../../css/nav.css">
 </head>
-<body style="background: white;">
-<div class="w3-row w3-border">
-   <div class="w3-container w3-quarter">
-      <div id="nav">
+<style>
+   html,body{
+      height: 100%;
+   }
+   .contenido{
+      position: absolute; 
+      width: 95%; 
+      height: 100%;
+   }
+</style>
+<body style="background:white;">
+   <div class="row">
+      <div class="col-sm-3" style="background: white">
+         <div id="nav">
          <div class="nav_titulo">
             Extinciones masivas
          </div>
@@ -24,14 +35,16 @@
             <li><a href="ITEMS_Sexta_Extincion/CUARTA_Extincion.html" target="iframe_a">La cuarta extinción</a></li>
             <li><a href="ITEMS_Sexta_Extincion/QUINTA_Extincion.html" target="iframe_a">La quinta extinción</a></li>
             <li><a href="ITEMS_Sexta_Extincion/SEXTA_Extincion.html" target="iframe_a">La sexta extinción</a></li>
-            <li><a href="ITEMS_Sexta_Extincion/Biodivesidad_combatir_la_sexta_extincion_masiva_B._No.pdf" target="iframe_a">Artículo: Biodiversidad: combatir la sexta extinción masiva</a></li>
+            <div class="nav_titulo">
+               Artículos
+            </div>
+            <li><a href="ITEMS_Sexta_Extincion/Biodivesidad_combatir_la_sexta_extincion_masiva_B._No.pdf" target="iframe_a">Biodiversidad: combatir la sexta extinción masiva</a></li>
          </ul>
          <br>
       </div>
    </div>
-   <div class="w3-container w3-threequarter" style="background: white;">
-      <div style="margin-top: 4px; background: white; width: 100%; height: auto;">
-         <iframe src="ITEMS_Sexta_Extincion/INTROITO_Sexta_Extincion.html" width="100%" height="1500px" name="iframe_a" frameborder="0" seamless="seamless"></iframe>
+   <div class="col-sm-9" style="position: relative;  padding-bottom: 50%;">
+         <iframe src="ITEMS_Sexta_Extincion/INTROITO_Sexta_Extincion.html" class="contenido" name="iframe_a" frameborder="0" seamless="seamless"></iframe>
       </div>
    </div>
 </div>
