@@ -5,12 +5,18 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <meta http-equiv="X-UA-Compatible" content="ie=edge">
    <title>MENU_Biografia_de_Mario_Molina</title>
+   <link rel="stylesheet" href="../../css/bootstrap-grid.css">
    <link rel="stylesheet" href="ITEMS_Biografia_de_Mario_Molina/w3.css">
    <link rel="stylesheet" href="ITEMS_Biografia_de_Mario_Molina/nav.css">
 </head>
-<body style="background:white">
-<div class="w3-row w3-border">
-   <div class="w3-container w3-quarter" style="background: white">
+<style>
+   html,body{
+      height: 100%;
+   }
+</style>
+<body style="background:white;">
+<div class="row">
+   <div class="col-sm-3" style="background: white">
       <div id="nav">
          <div class="nav_titulo">Biografía de Mario Molina</div>
          <ul id="nav_menu">
@@ -21,19 +27,15 @@
             <div class="nav_titulo">
                Artículos
             </div>
-            <li><a href="ITEMS_Biografia_de_Mario_Molina/249810a0.pdf" target="iframe_a">Stratospheric sink for chlorofluoromethanes: chlorine atomc-atalysed destruction of ozone</a></li>
-            <li><a href="ITEMS_Biografia_de_Mario_Molina/Resumen-ejecutivo-EDUACACION_2018.pdf" target="iframe_a">Implementación a gran escala del proyecto de educación en cambio
+            <li><a href="ITEMS_Biografia_de_Mario_Molina/249810a0.pdf" target="iframe_a" type="application/pdf">Stratospheric sink for chlorofluoromethanes: chlorine atomc-atalysed destruction of ozone</a></li>
+            <li><a href="ITEMS_Biografia_de_Mario_Molina/Resumen-ejecutivo-EDUACACION_2018.pdf" type="application/pdf" target="iframe_a">Implementación a gran escala del proyecto de educación en cambio
                climático a nivel básico y medio superior</a></li>
          </ul>
          <br>
       </div>
    </div>
-   <div class="w3-container w3-threequarter" style="background: white;">
-      <div style="margin-top: 4px; background: white; width: 100%; height: auto;">
-         <div>
-            <iframe src="ITEMS_Biografia_de_Mario_Molina/INTROITO_Biografia_de_Mario_Molina.html" width="100%" height="1500px" name="iframe_a" frameborder="0" seamless="seamless"></iframe>
-         </div>
-      </div>
+   <div class="col-sm-9" style="position: relative;  padding-bottom: 50%;">
+      <iframe src="ITEMS_Biografia_de_Mario_Molina/INTROITO_Biografia_de_Mario_Molina.html" style="position: absolute; width: 90%; height: 100%; padding:5px" name="iframe_a" frameborder="0" seamless="seamless"></iframe>
    </div>
 </div>
 </body>
