@@ -1,0 +1,93 @@
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif;}
+.mySlides {display: none}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 100%; /*1000px;*/
+  position: relative;
+  margin: auto;
+}
+
+.ld-ctndor { 
+    max-width: 100%;
+    height: auto;
+    overflow: auto;
+    margin: 0px auto;
+    background: white;  /* fondo por omisión */ 
+    padding: 10px 40px;
+    border-radius: 3px;
+    border: 0px solid black;
+    text-align: center;
+    float: left;
+}
+
+/* Caption text */
+.text {
+  color: black; /*#f2f2f2;*/
+  font-size: 15px;
+  padding: 8px 12px;
+  position: realtive; /*absolute;*/
+  bottom: 8px;
+  /*left: 70px;*/
+  width: 100%;
+  text-align: justify;
+}
+
+/* Number text (1/4 etc) */
+.numbertext {
+  color: black; /*#f2f2f2;*/
+  font-size: 12px;
+  padding: 8px 12px;
+  position: relative;
+  top: 0;
+  width: 100%;
+  text-align: center;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 13px;
+  width: 13px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+#section{ max-width: 100%; font-family: Verdana; font-size:18px; font-style:bold; padding:5px 20px; text-align:justify;}
+#titulo{font-family: Palatino linotype; font-size:26px; padding:2px; text-align: center; background: rgba(0, 150, 0, 0.3);}
+.sangria {text-indent: 40px;}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
