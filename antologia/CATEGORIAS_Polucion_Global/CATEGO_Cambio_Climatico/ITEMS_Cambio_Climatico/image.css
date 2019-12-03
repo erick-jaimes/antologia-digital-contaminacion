@@ -1,0 +1,18 @@
+body{
+
+	background-image: url(imagenes_cambio_climatico/cambio_climatico_big.jpg);
+	background-size: 80px 60px;
+    background-repeat: no-repeat;
+
+}
+p{
+	background-color: #00FFFF;
+}
+
+w-100{
+	background-image: url(imagenes_cambio_climatico/tortuga.jpg);
+	background-size: 80px 60px;
+    background-repeat: no-repeat;
+
+	width: 100px;
+}
