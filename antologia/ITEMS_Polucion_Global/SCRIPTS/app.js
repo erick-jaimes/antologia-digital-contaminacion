@@ -1,3 +1,5 @@
+var slideIndex = 0;
+
 function showSlides() {
     var i;
     var slides = document.getElementsByClassName("mySlides");
@@ -14,6 +16,7 @@ function showSlides() {
     dots[slideIndex-1].className += " active";
     setTimeout(showSlides, 10000); // Change image every 2 seconds
   }
+
 var miVideo;
 
 carga1=function() {
@@ -85,8 +88,8 @@ function Normal3() {
     miVideo3.width = 420; 
 } 
 
-var slideIndex = 0;
+
 showSlides();
 carga1();
-carga2();
+// carga2();
 carga3();
