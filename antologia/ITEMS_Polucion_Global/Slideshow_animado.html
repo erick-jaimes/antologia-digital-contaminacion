@@ -5,194 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="../css/w3.css">
-    <link rel="stylesheet" href="../css/nav.css">
-</head>
-<script>
-  function showSlides() {
-    var i;
-    var slides = document.getElementsByClassName("mySlides");
-    var dots = document.getElementsByClassName("dot");
-    for (i = 0; i < slides.length; i++) {
-       slides[i].style.display = "none";  
-    }
-    slideIndex++;
-    if (slideIndex> slides.length) {slideIndex = 1}    
-    for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" active", "");
-    }
-    slides[slideIndex-1].style.display = "block";  
-    dots[slideIndex-1].className += " active";
-    setTimeout(showSlides, 10000); // Change image every 2 seconds
-  }
-</script>
-<script>
-  var miVideo;
-
-    carga1=function() {
-      miVideo1 = document.getElementById("video1"); 
-    }
-
-    function JuegaPausa1() { 
-        if (miVideo1.paused) 
-            miVideo1.play(); 
-        else 
-            miVideo1.pause(); 
-    } 
-
-    function Grande1() { 
-        miVideo1.width = 630; 
-    }  
-
-    function Pequeno1() { 
-        miVideo1.width = 320; 
-    } 
-
-    function Normal1() { 
-        miVideo1.width = 420; 
-    } 
-
-   carga2=function() {
-      miVideo2 = document.getElementById("video2"); 
-    }
-
-    function JuegaPausa2() { 
-        if (miVideo2.paused) 
-            miVideo2.play(); 
-        else 
-            miVideo2.pause(); 
-    } 
-
-    function Grande2() { 
-        miVideo2.width = 630; 
-    }  
-
-    function Pequeno2() { 
-        miVideo2.width = 320; 
-    } 
-
-    function Normal2() { 
-        miVideo2.width = 420; 
-    } 
-
-   carga3=function() {
-      miVideo3 = document.getElementById("video3"); 
-    }
-
-    function JuegaPausa3() { 
-        if (miVideo3.paused) 
-            miVideo3.play(); 
-        else 
-            miVideo3.pause(); 
-    } 
-
-    function Grande3() { 
-        miVideo3.width = 630; 
-    }  
-
-    function Pequeno3() { 
-        miVideo3.width = 320; 
-    } 
-
-    function Normal3() { 
-        miVideo3.width = 420; 
-    } 
-
-</script>
-<style>
-* {box-sizing: border-box}
-body {font-family: Verdana, sans-serif;}
-.mySlides {display: none}
-
-/* Slideshow container */
-.slideshow-container {
-  max-width: 100%; /*1000px;*/
-  position: relative;
-  margin: auto;
-}
-
-.ld-ctndor { 
-    max-width: 100%;
-    height: auto;
-    overflow: auto;
-    margin: 0px auto;
-    background: white;  /* fondo por omisión */ 
-    padding: 10px 40px;
-    border-radius: 3px;
-    border: 0px solid black;
-    text-align: center;
-    float: left;
-}
-
-/* Caption text */
-.text {
-  color: black; /*#f2f2f2;*/
-  font-size: 15px;
-  padding: 8px 12px;
-  position: realtive; /*absolute;*/
-  bottom: 8px;
-  /*left: 70px;*/
-  width: 100%;
-  text-align: justify;
-}
-
-/* Number text (1/4 etc) */
-.numbertext {
-  color: black; /*#f2f2f2;*/
-  font-size: 12px;
-  padding: 8px 12px;
-  position: relative;
-  top: 0;
-  width: 100%;
-  text-align: center;
-}
-
-/* The dots/bullets/indicators */
-.dot {
-  height: 13px;
-  width: 13px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
-
-#section{ max-width: 100%; font-family: Verdana; font-size:18px; font-style:bold; padding:5px 20px; text-align:justify;}
-#titulo{font-family: Palatino linotype; font-size:26px; padding:2px; text-align: center; background: rgba(0, 150, 0, 0.3);}
-.sangria {text-indent: 40px;}
-
-.active {
-  background-color: #717171;
-}
-
-/* Fading animation */
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
-@-webkit-keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
-}
-
-@keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
-}
-
-/* On smaller screens, decrease text size */
-@media only screen and (max-width: 300px) {
-  .text {font-size: 11px}
-}
-
-img {
-  width: 100%;
-  height: auto;
-}
-</style>
+    <link rel="stylesheet" href="./ESTILOS/estilo.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
 </head>
 <body>
 <div class="w3-row w3-border">
@@ -212,7 +26,7 @@ img {
                         <img src="IMAGENES_Portada/58e3bb3316000021004d8a6f.jpg" style="width:50%">
                         <center>
                         <div class="text">
-                            Tortuga con pl&aacute;stico alrededor de su concha. Departamento de Conservaci&oacute;n de Missouri 
+                            Tortuga con plástico alrededor de su concha. Departamento de Conservación de Missouri 
                         </div>
                         </center>
                     </div>
@@ -222,7 +36,7 @@ img {
                         <img src="IMAGENES_Portada/58debe2a2c00002000ff19fd.jpg" style="width:50%">
                         <center>
                         <div class="text">
-                            Un polluelo muerto de albatross con restos marinos de pl&aacute;stico en su est&oacute;mago. Fotografiado en el Refugio nacional de vida salvaje Midway Atoll,en el Oc&eacute;ano Pac&iacute;fico en septiembre de 2009.
+                            Un polluelo muerto de albatross con restos marinos de plástico en su estómago. Fotografiado en el Refugio nacional de vida salvaje Midway Atoll,en el Océano Pacífico en septiembre de 2009.
                         </div>
                         </center>
                     </div>
@@ -231,7 +45,7 @@ img {
                         <div class="numbertext">3 / 4</div>
                         <img src="IMAGENES_Portada/58e3dc7e1500002100c7de35.jpg" style="width:30%">
                         <div class="text">
-                            Un albatros de Laysan fallecido, descansa en el suelo en el atol&oacute;n de Midway, con el est&oacute;mago expuesto, que se nota lleno de desechos que consumi&oacute; en su habitat costero. Los animales marinos no pueden digerir los desechos y muchas veces mueren por inanici&oacute;n. NOAA. Hay algunas peque&ntilde;as maneras en que todos podemos ayudar a frenar la cantidad de pl&aacute;stico que se desecha a diario: Comienza por consumir menos art&iacute;culos de un solo uso, como popotes y contenedores para llevar, as&iacute; como reciclar lo que tenga un doble uso. 
+                            Un albatros de Laysan fallecido, descansa en el suelo en el atolón de Midway, con el estómago expuesto, que se nota lleno de desechos que consumió en su habitat costero. Los animales marinos no pueden digerir los desechos y muchas veces mueren por inanición. NOAA. Hay algunas pequeñas maneras en que todos podemos ayudar a frenar la cantidad de plástico que se desecha a diario: Comienza por consumir menos artículos de un solo uso, como popotes y contenedores para llevar, así como reciclar lo que tenga un doble uso. 
                         </div>
                     </div>
 
@@ -239,7 +53,15 @@ img {
                         <div class="numbertext">4 / 4</div>
                         <img src="IMAGENES_Portada/58e515332c00006568ff26b0.jpg" style="width:30%">
                         <div class="text">
-                            P&aacute;jaro que aparentemente muri&oacute; estrangulado por la cuerda de un globo. Pamela Denmon USFWS.* 
+                            Pájaro que aparentemente murió estrangulado por la cuerda de un globo. Pamela Denmon USFWS.* 
+                        </div>
+                    </div>
+
+                     <div class="mySlides fade">
+                        <div class="numbertext">4 / 4</div>
+                        <img src="IMAGENES_Portada/rios_de_México.jpg" style="width:30%">
+                        <div class="text">
+                            Mapa de los rios de México  
                         </div>
                     </div>
                 </div>
@@ -253,7 +75,12 @@ img {
                 </div>
                 <br>
                 <div class="text" style="float: left; text-align: justify; width: 100%">
-                    Las cuatro fotos y sus comentarios correspondentes se tomaron del art&iacute;culo: UN MUNDO MEJOR 17 fotos que muestran c&oacute;mo da&ntilde;a la basura a los animales marinos de Sarah Ruiz-Grossman Associate Impact Editor, The Huffington Post. http://www.huffingtonpost.com.mx/2017/05/05/fotos-de-animales-muertos-a-causa-de-la-basura-que-llega-al-ocea_a_22071427/ el art&iacute;culo se public&oacute; originalmente en The HuffPost EU. 
+                    Las cuatro fotos y sus comentarios correspondentes se tomaron del artículo: UN MUNDO MEJOR 17 fotos que muestran 
+                    cómo daña la basura a los animales marinos de Sarah Ruiz-Grossman Associate Impact Editor, The Huffington Post. 
+                    <a href="http://www.huffingtonpost.com.mx/2017/05/05/fotos-de-animales-muertos-a-causa-de-la-basura-que-llega-al-ocea_a_22071427/">
+                        http://www.huffingtonpost.com.mx/2017/05/05/fotos-de-animales-muertos-a-causa-de-la-basura-que-llega-al-ocea_a_22071427/ 
+                    </a>
+                    el artículo se publicó originalmente en The HuffPost EU. 
                 </div>
             </div>
             </center>
@@ -265,7 +92,7 @@ img {
             <div style="text-align:center"> 
                 <button onclick="JuegaPausa1()">Juega/Pausa</button> 
                 <button onclick="Grande1()">Grande</button>
-                <button onclick="Pequeno1()">Peque&ntilde;o</button>
+                <button onclick="Pequeno1()">Pequeño</button>
                 <button onclick="Normal1()">Normal</button>
                 <br><br>
     
@@ -274,15 +101,15 @@ img {
                     <source src="VID-20170630-WA0075.ogg" type="video/ogg">
                     Su navegador no incluye video HTML5.
                 </video>
-                <p>Video cortes&iacute;a de <a href="">un celular</a>.</p>
+                <p>Video cortesía de un celular.</p>
             </div> 
         </div>
 <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~                 VIDEO 2            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ //-->
-        <div class="ld-ctndor" style="float: right;"> 
+        <!-- <div class="ld-ctndor" style="float: right;"> 
             <div style="text-align:center"> 
                 <button onclick="JuegaPausa2()">Juega/Pausa</button> 
                 <button onclick="Grande2()">Grande</button>
-                <button onclick="Pequeno2()">Peque&ntilde;o</button>
+                <button onclick="Pequeno2()">Pequeño</button>
                 <button onclick="Normal2()">Normal</button>
                 <br><br>
             
@@ -293,13 +120,13 @@ img {
                 </video>
                 <p>Arena la nueva fiebre del oro. La guerra por la arena</p>
             </div> 
-        </div>
+        </div> -->
 <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~                 VIDEO 3            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ //-->
         <div class="ld-ctndor" style="float: right;"> 
             <div style="text-align:center"> 
                 <button onclick="JuegaPausa3()">Juega/Pausa</button> 
                 <button onclick="Grande3()">Grande</button>
-                <button onclick="Pequeno3()">Peque&ntilde;o</button>
+                <button onclick="Pequeno3()">Pequeño</button>
                 <button onclick="Normal3()">Normal</button>
                 <br><br>
             
@@ -308,7 +135,7 @@ img {
                     <source src="Contaminación del mundo animado.ogg" type="video/ogg">
                     Su navegador no incluye video HTML5.
                 </video>
-                <p>Contaminaci&oacute;n del mundo (animaci&oacute;n)</p>
+                <p>Contaminación del mundo (animación)</p>
             </div> 
         </div>
 <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ //-->
@@ -318,8 +145,8 @@ img {
     <div id="titulo">
         Mi galeria de fotos y otros
     </div>
-    <br>
-    Aqu&iacute; van mis fotos de<br>
+    <!-- <br>
+    Aquí van mis fotos de<br>
     <ul>
         <li>Yo merito</li>
         <li>Papá y mamá</li>
@@ -329,18 +156,134 @@ img {
         <li>Aficiones como instrumento que tocas, bailas, dibujas, brincas, etc.</li>
         <li>Eventos como 15 años, casorio, el nuevo bebe, etc.</li>
         <li>Novio(a)s, diga cuanto(a)s</li>
-        <li>Incluya alg&uacute;n video</li>
+        <li>Incluya algún video</li>
         <li>otros</li>
     </ul>
-    Incluya <b>comentarios</b> en cada foto. Incluya un breve <b>curriculum vitae</b>.
+    Incluya <b>comentarios</b> en cada foto. Incluya un breve <b>curriculum vitae</b>. -->
 </div>
-<script>
-  var slideIndex = 0;
-  showSlides();
-  carga1();
-  carga2();
-  carga3();
-</script>
+<div id="section">
+    <div id="titulo">
+        Andrés González
+    </div>
+    <div class="row">
+        <div class="col-md-6 offset-md-3">
+            <div class="container pt-10">
+                <div id="carousel-andres" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carousel-andres" data-slide-to="0" class="active"></li>
+                        <li data-target="#carousel-andres" data-slide-to="1"></li>
+                        <li data-target="#carousel-andres" data-slide-to="2"></li>
+                        <li data-target="#carousel-andres" data-slide-to="3"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img class="d-block w-100" src="Nosotros/Andres/festivalcantares.jpg" alt="Festival Cantares">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h3>Festival Cantares</h3>
+                                <p>Un festival de trova en CU. De izquierda a derecha: Yo, mi mamá (Rocío) y mi novia (Itzel)</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="Nosotros/Andres/domination.jpg" alt="Festival Domination">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h3>Festival Domination</h3>
+                                <p>Yo y mi novia en el festival de metal Domination.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="Nosotros/Andres/maeyyo.jpg" alt="Mae y yo">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h3>Mae y yo</h3>
+                                <p>Mi mejor amiga y exnovia Maeli, fallecida en marzo del año pasado. Ese día me planchó el cabello.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="Nosotros/Andres/kala.jpg" alt="Kala y yo">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h3>Kala y yo</h3>
+                                <p>Mi mascota preferida, usándola de buffanda en la foto. Pasé con ella unos buenos 18 años. Falleció en diciembre del 2018</p>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carousel-andres" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Anterior</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carousel-andres" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Siguiente</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
+<div id="section">
+    <div id="titulo">
+        Santos Albañil
+    </div>
+    <div class="row">
+        <div class="col-md-6 offset-md-3">
+            <div class="container pt-10">
+                <div id="carousel-santos" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carousel-santos" data-slide-to="0" class="active"></li>
+                        <li data-target="#carousel-santos" data-slide-to="1"></li>
+                        <li data-target="#carousel-santos" data-slide-to="2"></li>
+                        <li data-target="#carousel-santos" data-slide-to="3"></li>
+                        <li data-target="#carousel-santos" data-slide-to="4"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img class="d-block w-100" src="./Nosotros/Santos/gatos.jpeg" alt="Botas y Maya">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h3>Botas y Maya</h3>
+                                <p>Gatos rescatados</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="./Nosotros/Santos/miriam.jpeg" alt="Miriam">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h3>Miriam</h3>
+                                <p>Perra encontrada en la calle</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="Nosotros/Santos/yomero.jpeg" alt="Yo mero">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h3>Yo mero</h3>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="Nosotros/Santos/yoardilla.jpeg" alt="Yo mero">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h3>Yo mero otra vez</h3>
+                                <p>Alimentando a una ardilla en la FI</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="Nosotros/Santos/fiestaXV.jpeg" alt="Yo mero">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h3>Fiesta de XV años</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carousel-santos" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Anterior</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carousel-santos" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Siguiente</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
 </body>
+<script src="../js/jquery-3.4.1.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script src="./SCRIPTS/app.js"></script>
 </html> 
